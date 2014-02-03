@@ -3,7 +3,9 @@ pom.xml
 /lib/
 /classes/
 /out/
+/out-test/
 /target/
 .lein-deps-sum
 .lein-repl-history
 .lein-plugins/
+*~
