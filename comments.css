@@ -1,0 +1,32 @@
+div.add-comment {
+    margin: 10px 10px;
+}
+
+div.add-comment * {
+    display: block;
+    width: 100%;
+}
+
+div.add-comment button {
+    float: right;
+    width: 50px;
+}
+
+div.add-comment textarea {
+    height: 150px;
+}
+
+div.add-comment input {
+    border: 1px solid;
+    padding-left: 3px;
+}
+
+div.comment-list {
+    margin: 10px 10px;
+}
+
+div#app {
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
