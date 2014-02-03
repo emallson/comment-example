@@ -20,7 +20,7 @@
   "Constructs a list containing all of the comments"
   (om/component
    (html [:div {:class "comment-list"}
-          (om/build-all comment-view comments {:key :id})])))
+          (om/build-all comment-view comments {:key :name})])))
 
 (defn update-state! [event owner key]
   (om/set-state! owner key (.. event -target -value)))
