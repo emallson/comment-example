@@ -1,7 +1,8 @@
 (ns emallson.comment-example.core
   (:require [om.core :as om :include-macros true]
             [om.dom :as dom :include-macros true]
-            [sablono.core :as sab :refer [html] :include-macros true]))
+            [sablono.core :as sab :refer [html] :include-macros true]
+            [clojure.browser.repl]))
 
 (enable-console-print!)
 
@@ -23,9 +24,11 @@
           (om/build-all comment-view comments {:key :name})])))
 
 (defn update-state! [event owner key]
+  "Updates state (:key owner) based on the value pointed to by the event."
   (om/set-state! owner key (.. event -target -value)))
 
 (defn blank-comment-form! [owner]
+  "Blanks out the comment form. Used after adding a comment."
   (om/set-state! owner :name "")
   (om/set-state! owner :content ""))
 
