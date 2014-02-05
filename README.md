@@ -5,17 +5,8 @@ This is a simple comment system written in ClojureScript with [Om](https://githu
 
 This was written to help prepare for a presentation.
 
-Running the Example
--------------------
-
-To build the code, you need [leiningen](http://leiningen.org/). Get it before continuing.
-
-Clone the repository and run `lein cljsbuild once`. Then, open **index.html** in your browser.
-
-Running the REPL
-----------------
-
-The in-browser repl can be connected as follows:
+Running Example and the REPL
+----------------------------
 
 Using leiningen:
 
