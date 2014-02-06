@@ -7,7 +7,7 @@
             [clojure.java.io :as io]))
 
 (enlive/deftemplate page
-  (io/resource "index.html")
+  (io/resource "repl.html")
   []
   [:body] (enlive/append
             (enlive/html [:script (browser-connected-repl-js)])))
